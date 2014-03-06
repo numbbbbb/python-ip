@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 import struct
 from socket import gethostbyname
 from socket import inet_aton
@@ -36,7 +39,11 @@ def cache(func):
 
 @cache
 def _find_by_ip(ip):
-    nip = inet_aton(ip)
+    try:
+        nip = inet_aton(ip)
+    except:
+        return "illegal IP address"
+
     ipdot = ip.split('.')
     if int(ipdot[0]) < 0 or int(ipdot[0]) > 255 or len(ipdot) != 4:
         return "N/A"
@@ -65,6 +72,6 @@ def find(name):
     try:
         ip = gethostbyname(name)
     except:
-        return "wrong host name"
+        ip = name
 
     return _find_by_ip(ip)

@@ -39,11 +39,7 @@ def cache(func):
 
 @cache
 def _find_by_ip(ip):
-    try:
-        nip = inet_aton(ip)
-    except:
-        return "illegal IP address"
-
+    nip = inet_aton(ip)
     ipdot = ip.split('.')
     if int(ipdot[0]) < 0 or int(ipdot[0]) > 255 or len(ipdot) != 4:
         return "N/A"
@@ -72,6 +68,6 @@ def find(name):
     try:
         ip = gethostbyname(name)
     except:
-        ip = name
+        return "illegal IP address"
 
     return _find_by_ip(ip)

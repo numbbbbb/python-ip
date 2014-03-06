@@ -2,6 +2,8 @@ python-ip
 ===========
 基于[全球 IPv4 地址归属地数据库](http://tool.17mon.cn/ipdb.html)修改的Python版本
 
+只支持Python2
+
 使用方法
 ===========
 

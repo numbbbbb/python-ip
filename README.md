@@ -4,7 +4,6 @@ python-ip
 
 使用方法
 ===========
-.. code:: python
 
     >>> import ip2loc
     >>> print ip2loc.find("www.langman1dian.com")

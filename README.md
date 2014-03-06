@@ -8,7 +8,7 @@ python-ip
 
 致谢
 ===========
-我自己的代码写的不好，这个风格是参考[lxyu](https://github.com/lxyu/17monip)的代码修改的，大家star他的库比较好~
+我自己的代码写的不好，这个风格是参考[lxyu的代码](https://github.com/lxyu/17monip)修改的，大家star他的库比较好~
 
 
 安装

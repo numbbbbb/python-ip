@@ -7,8 +7,8 @@ python-ip
 .. code:: python
 
     >>> import ip2loc
-    >>> ip2loc.find("www.langman1dian.com")
-    '日本\t日本'
+    >>> print ip2loc.find("www.langman1dian.com")
+    '日本   日本'
 
 
 协议

@@ -4,9 +4,12 @@ python-ip
 
 使用方法
 ===========
-*  调用IP.py中的find_by_name()函数，传入域名，返回值为IP归属地。
-*  数据库文件17monipdb.dat需要和IP.py文件在同一目录下。
+.. code:: python
+    >>> import ip2loc
+    >>> ip2loc.find("www.langman1dian.com")
+    '日本\t日本'
 
-License
+
+协议
 ===========
-Based on [WTFPL](http://en.wikipedia.org/wiki/WTFPL).
+基于[WTFPL](http://en.wikipedia.org/wiki/WTFPL)协议开源。

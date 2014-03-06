@@ -5,6 +5,7 @@ python-ip
 使用方法
 ===========
 .. code:: python
+
     >>> import ip2loc
     >>> ip2loc.find("www.langman1dian.com")
     '日本\t日本'

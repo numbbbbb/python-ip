@@ -9,7 +9,7 @@ python-ip
 安装
 ===========
 
-    $ pip install ip2loc
+    $ sudo pip install ip2loc
 
 使用方法
 ===========
